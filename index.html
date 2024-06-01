@@ -7,221 +7,87 @@
     <title>Zaid Fitness</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
     <link rel="stylesheet" href="CSS/style.css">
-    <style>
-        body {
-            /* font-size: 33px; */
-            color: white;
-            padding: 0px;
-            margin: 0px;
-            background-image: url('img/bg2.png');
-            background-repeat: no-repeat;
-            background-size: 130%;
-            background-position: top left;
-            /* height: 5000px; */
-            font-family: "Trirong", serif;
-        }
-
-        .container {
-            margin: 200px 200px;
-            padding: 2px 150px;
-            /* border: 2px solid rgb(103, 25, 25); */
-            background-color: transparent;
-            border-radius: 5%;
-            width: 50%;
-            font-size: 60px;
-            height: 1000px;
-
-
-        }
-
-        .form-group {
-            text-align: center;
-            padding: 0px 12px;
-            border: 2px solid black;
-            display: block;
-            width: 100%;
-            margin: 12px auto;
-        }
-
-        .btn1 {
-            font-family: "Trirong", serif;
-            padding: 10px 24px;
-            margin: 100px auto;
-            color: white;
-            background-color: transparent;
-            font-size: 50px;
-            border: 2px solid rgb(6, 6, 6);
-            cursor: pointer;
-            border-radius: 20px;
-        }
-
-        .container input {
-            display: block;
-            margin: 5px 26px;
-            padding: 5px 100px;
-            font-size: 50px;
-            border: none;
-            border-radius: 10px;
-
-        }
-        .container h1{
-            margin: 1px 11px;
-            padding: 12px 12px;
-        }
-        .container button {
-            display: block;
-            width: 30%;
-            font-family: "Trirong", serif;
-            padding: 0px 0px;
-            margin: 46px 28px;
-            color: white;
-            background-color: transparent;
-            font-size: 40px;
-            border: 2px solid rgb(255, 255, 255);
-            border-radius: 20px;
-            cursor: pointer;
-
-        }
-
-        .left {
-            position: absolute;
-            left: 100px;
-            top: 50px;
-            width :15vw;
-            display: flex;
-
-            /* border: 2px solid red; */
-        }
-
-        .mid {
-            display: block;
-            font-size: 60px;
-            width: 33%;
-            margin: 50px auto;
-            /* border: 2px solid green; */
-        }
-        
-
-        .right {
-            /* border: 2px solid yellow; */
-            display: inline-block;
-            position: absolute;
-            right: 34px;
-            top: 23px;
-            padding: 2px 1px;
-            margin: 50px 30px;
-        }
-
-        .btn {
-            font-family: "Trirong", serif;
-            padding: 10px 40px;
-            margin: 11px 20px;
-            color: white;
-            background-color: transparent;
-            font-size: 50px;
-            border: 2px solid rgb(255, 255, 255);
-            cursor: pointer;
-            border-radius: 20px;
-            float: right;
-
-
-        }
-
-        .btn:hover {
-            background-color: grey;
-        }
-
-        .btn1:hover {
-            background-color: grey;
-        }
-
-        .left img {
-            width: 185px;
-            padding: 12px 34px;
-            margin: 0px 30px;
-            filter: invert(100%);
-        }
-
-        .left div {
-            font-size: 90px;
-            padding: 4px 12px;
-            text-align: center;
-            display: block;
-            margin: auto 2px;
-            font-weight: bolder;
-        }
-
-
-        .navbar {
-            display: inline-block;
-        }
-
-        .navbar li {
-            display: inline-block;
-            font-size: 60px;
-            border-radius: 20px;
-            border: 2px solid white;
-
-        }
-
-        .navbar li a {
-            color: white;
-            padding: 34px 43px;
-            text-decoration: none;
-        }
-
-        .navbar li a:hover,
-        .navbar li a.active {
-            text-decoration: underline;
-            color: gray;
-        }
-    </style>
 </head>
 
 <body>
     <header class="header">
-        <!-- leftbox for logo -->
         <div class="left">
-            <img src="img/logo.png" alt="">
+            <img src="img/logo.png" alt="Zaid's Flex Logo">
             <div>Zaid's Flex</div>
         </div>
-        <!-- midbox for NavigationBar -->
-        <div class="mid">
-            <!-- im mid -->
-            <div class="navbar">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Calorie Calculator</a></li>
-                    <li><a href="#">Contact Us</a></li>
-                </ul>
-            </div>
-        </div>
-        <!-- rightbox for buttons -->
-        <div class="right">
-            <button class="btn">Call Us</button>
-            <button class="btn">Email Us</button>
-        </div>
+        <button class="nav-toggle" aria-label="toggle navigation">
+            <span class="hamburger"></span>
+        </button>
+        <nav class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="btn">Home</a></li>
+                <li><a href="#" class="btn">About Us</a></li>
+                <li><a href="#" class="btn">Calorie Calculator</a></li>
+                <li><a href="#" class="btn">Contact Us</a></li>
+                <button class="btn right">Sign Up</button>
+                <button class="btn right">Login </button>
+            </ul>
+        </nav>
     </header>
-    <div class="container">
-        <h1>Join the Best Gym of Mumbai Now !</h1>
-        <form action="noaction.php">
-            <div class="form-group">
-                <input type="text" placeholder="Enter Your Name">
-            </div>
-            <div class="form-group">
-                <input type="text" placeholder="Enter Your Age">
-            </div>
-            <div class="form-group">
-                <input type="text" placeholder="Enter Your Gender">
-            </div>
-            <div class="form-group">
-                <input type="text" placeholder="Enter Your Contact No.">
-            </div>
-            <button class="btn1">Submit</button>
-        </form>
-    </div>
+    <div class="home_page">
+        <div class="home_page_heading">
 
+            <h5>YOUR BODY & YOUR FITNESS REQUIREMENTS ARE UNIQUE.
+                YOUR PERSONAL TRAINING SHOULD REFLECT THAT! </h5>
+            <h2>Certified Personal Trainers</h2>
+            <p>Get fit fast with Waves Gym’s <strong>certified personal trainers</strong>. Enjoy cardio, strength, and
+                weight training with top equipment. <strong>Join now</strong> and make ‘Impossible’ ‘I’m Possible’!</p>
+        </div>
+        <!-- <div class="container">
+            <h1>Join the Best Gym of Mumbai Now!</h1>
+            <form action="noaction.php">
+                <div class="form-group">
+                    <input type="text" placeholder="Enter Your Name">
+                </div>
+                <div class="form-group">
+                    <input type="text" placeholder="Enter Your Age">
+                </div>
+                <div class="form-group">
+                    <input type="text" placeholder="Enter Your Gender">
+                </div>
+                <div class="form-group">
+                    <input type="text" placeholder="Enter Your Contact No.">
+                </div>
+                <button class="btn1" id="sbt">GET STARTED</button>
+            </form>
+        </div> -->
+    </div>
+    <section class="second_sec">
+        <div class="details">
+            <h5>experienced & Internationally Certified personal trainers</h5>
+        <h2>The Best Fitness Experience</h2>
+        <p>We’re committed to bringing you the best workout experience.</p>
+        </div>
+        <div class="container">
+            <h1>Join the Best Gym of Mumbai Now!</h1>
+            <form action="noaction.php">
+                <div class="form-group">
+                    <input type="text" placeholder="Enter Your Name">
+                </div>
+                <div class="form-group">
+                    <input type="text" placeholder="Enter Your Age">
+                </div>
+                <div class="form-group">
+                    <input type="text" placeholder="Enter Your Gender">
+                </div>
+                <div class="form-group">
+                    <input type="text" placeholder="Enter Your Contact No.">
+                </div>
+                <button class="btn1" id="sbt">GET STARTED</button>
+            </form>
+            <!-- <div class="images">
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+            </div> -->
+        </div>
+    </section>
+    <script src="./js/script.js"></script>
 </body>
 
 </html>
