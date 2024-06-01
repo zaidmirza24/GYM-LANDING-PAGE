@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-html, body {
+html,
+body {
     overflow-x: hidden;
     margin: 0;
     padding: 0;
@@ -19,7 +20,7 @@ body {
     padding: 20px;
     background: rgb(0, 0, 0);
     position: relative;
-    width: 93%;
+    width: 98%;
 }
 
 .header .left {
@@ -216,6 +217,7 @@ body {
     .nav-toggle {
         display: inline;
     }
+
     .navbar {
         margin: 10px 0;
         flex-direction: column;
@@ -227,10 +229,12 @@ body {
         display: none;
         padding: 20px 0;
     }
+
     .navbar li {
         margin: 10px 0;
         text-align: start;
     }
+
     .navbar li a {
         display: block;
         width: 100%;
@@ -238,14 +242,17 @@ body {
         border-radius: 0px;
         border: none;
     }
+
     .navbar.active {
         display: flex;
         background-color: black;
         z-index: 999;
     }
+
     .right {
         margin: 10px 0px;
     }
+
     .home_page {
         flex-direction: column;
     }
@@ -255,30 +262,44 @@ body {
     .home_page_heading {
         width: 70%;
     }
+    .header {
+        width: 95%;
+
+    }
 }
 
 @media (max-width: 480px) {
-    
+    .header {
+        width: 93%;
+
+    }
+
     .container {
         width: 80%;
         padding: 20px;
     }
+
     .container h1 {
         font-size: 28px;
     }
+
     .btn1 {
         font-size: 10px;
         padding: 5px 10px;
     }
+
     .home_page_heading {
         left: 15px;
     }
+
     .home_page {
         background: url(../img/bg1.jpg) no-repeat top left / cover;
     }
+
     .second_sec {
         flex-direction: column;
     }
+
     .details {
         width: 90%;
         left: 15px;
